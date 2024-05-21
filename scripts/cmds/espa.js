@@ -26,7 +26,7 @@ module.exports = {
       if (query) {
         api.setMessageReaction("⏳", event.messageID, (err) => console.log(err), true);
         const processingMessage = await api.sendMessage(
-          `Asking SpaceExplorer. Please wait a moment...`,
+          `Asking espa. Please wait a moment...`,
           event.threadID
         );
 
