@@ -10,7 +10,6 @@ module.exports = {
   commandCategory: "𝚗𝚘 𝚙𝚛𝚎𝚏𝚒𝚡",
   usage: "( 𝙼𝚘𝚍𝚎𝚕 - 𝙶𝚎𝚖𝚒𝚗𝚒 𝙿𝚛𝚘 𝚅𝚒𝚜𝚒𝚘𝚗 )",
   cooldown: 3,
-  }
 };
 
 async function convertImageToCaption(imageURL, api, event, inputText) {
@@ -102,8 +101,8 @@ function formatFont(text) {
       formattedText += char;
     }
   }
-
   return formattedText;
+    }
 }
 
 onStart : async function ({ api, event }) {};
