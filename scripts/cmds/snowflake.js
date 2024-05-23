@@ -2,14 +2,14 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "snoflake",
+    name: "snowflake",
     author: "cliff",//api by hazey
     version: "1.0.0",
     countDown: 5,
     role: 0,
     category: "Ai",
     shortDescription: {
-      en: "{p}snoflake"
+      en: "{p}snowflake"
     }
   },
   onStart: async function ({ api, event, args }) {
@@ -35,7 +35,7 @@ module.exports = {
         api.sendMessage("Unable to get a response from Snoflake.", event.threadID);
       }
     } catch (error) {
-      console.error('Error making Snoflake API request:', error.message);
+      console.error('Error making Snowflake API request:', error.message);
       api.sendMessage("An error occurred while processing your request.", event.threadID);
     }
   }
